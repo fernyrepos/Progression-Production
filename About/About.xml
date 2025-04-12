@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Progression: Production</name>
+	<author>ferny</author>
+	<packageId>ferny.progressionproduction</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<description>Overhauls production research.</description>
+	<loadAfter>
+		<li>Ludeon.Rimworld</li>
+		<li>Ludeon.Rimworld.Royalty</li>
+		<li>Ludeon.Rimworld.Ideology</li>
+		<li>Ludeon.Rimworld.Biotech</li>
+		<li>Ludeon.Rimworld.Anomaly</li>
+		<li>dankpyon.medieval.overhaul</li>
+		<li>ferny.progressionaesthetics</li>
+		<li>ferny.progressioncore</li>
+		<li>kentington.saveourship2</li>
+		<li>vanillaexpanded.vfeproduction</li>
+		<li>scpchemfuel.appliances</li>
+		<li>vanillaexpanded.helixiengas</li>
+		<li>vanillaexpanded.vchemfuele</li>
+		<li>cixwow.helixiengasproduction</li>
+	</loadAfter>
+</ModMetaData>
