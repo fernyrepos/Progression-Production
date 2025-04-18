@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- concrete -->
+	<ProcessorFramework.ProcessDef Abstract="True" Name="Ferny_Make_ConcreteProcessBase" MayRequire="syrchalis.processor.framework">
+		<thingDef>VFEC_BlocksConcrete</thingDef>
+		<ingredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</ingredientFilter>
+		<capacityFactor>20</capacityFactor>
+		<efficiency>20</efficiency>
+		<usesTemperature>false</usesTemperature>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="Ferny_Make_ConcreteProcessBase" MayRequire="syrchalis.processor.framework">
+		<defName>Ferny_Make_ConcreteProcessSlow</defName>
+		<processDays>5</processDays>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="Ferny_Make_ConcreteProcessBase" MayRequire="syrchalis.processor.framework,dankpyon.medieval.overhaul">
+		<defName>Ferny_Make_ConcreteProcessFast</defName>
+		<processDays>2</processDays>
+	</ProcessorFramework.ProcessDef>
+
+	<!-- clay chunk -->
+	<ProcessorFramework.ProcessDef MayRequire="syrchalis.processor.framework,dankpyon.medieval.overhaul">
+		<defName>Ferny_Make_ClayChunkProcess</defName>
+		<processDays>5</processDays>
+		<thingDef>DankPyon_ChunkClay</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_Clay</li>
+			</thingDefs>
+		</ingredientFilter>
+		<capacityFactor>1</capacityFactor>
+		<efficiency>0.02</efficiency>
+		<usesTemperature>false</usesTemperature>
+	</ProcessorFramework.ProcessDef>
+
+	<!-- bronze -->
+	<ProcessorFramework.ProcessDef Abstract="True" Name="Ferny_Make_BronzeProcessBase" MayRequire="syrchalis.processor.framework">
+		<thingDef>VFEC_Bronze</thingDef>
+		<usesTemperature>false</usesTemperature>
+		<ingredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</ingredientFilter>
+		<capacityFactor>20</capacityFactor>
+		<efficiency>10</efficiency>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="Ferny_Make_BronzeProcessBase" MayRequire="syrchalis.processor.framework,dankpyon.medieval.overhaul">
+		<defName>Ferny_Make_BronzeFromChunkProcessKiln</defName>
+		<processDays>1</processDays>
+		<filledGraphicSuffix>_Filled</filledGraphicSuffix>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="Ferny_Make_BronzeProcessBase" MayRequire="syrchalis.processor.framework,dankpyon.medieval.overhaul">
+		<defName>Ferny_Make_BronzeFromChunkProcessSmelter</defName>
+		<processDays>0.5</processDays>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="Ferny_Make_BronzeProcessBase" MayRequire="syrchalis.processor.framework,dankpyon.medieval.overhaul">
+		<defName>Ferny_Make_BronzeFromChunkProcessIndustrial</defName>
+		<processDays>0.25</processDays>
+	</ProcessorFramework.ProcessDef>
+
+</Defs>
