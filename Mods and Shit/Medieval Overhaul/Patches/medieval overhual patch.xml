@@ -141,11 +141,30 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ResearchProjectDef[defName="DankPyon_TextileSpinning"]/prerequisites</xpath>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ResearchProjectDef[defName="Brewing"]/prerequisites</xpath>
-	</Operation>
-
-
+  <Operation Class="PatchOperationConditional">
+  <success>Always</success>
+      <xpath>/Defs/ResearchProjectDef[defName="Brewing"]/prerequisites</xpath>
+      <match Class="PatchOperationSequence">
+          <operations>
+              <li Class="PatchOperationReplace">
+                  <xpath>/Defs/ResearchProjectDef[defName="Brewing"]/prerequisites</xpath>
+                  <value>
+                      <prerequisites></prerequisites>
+                  </value>
+              </li>
+          </operations>
+      </match>
+      <nomatch Class="PatchOperationSequence">
+          <operations>
+              <li Class="PatchOperationAdd">
+                  <xpath>/Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+                  <value>
+                      <prerequisites></prerequisites>
+                  </value>
+              </li>
+          </operations>
+      </nomatch>
+  </Operation>
 
 <!-- VFE Classical -->
 
