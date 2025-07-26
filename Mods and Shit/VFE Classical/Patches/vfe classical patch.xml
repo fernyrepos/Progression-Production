@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- more concrete interactions -->
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- cement press -->
+			<li Class="PatchOperationAdd" MayRequire="syrchalis.processor.framework">
+				<xpath>/Defs/ThingDef[defName="VFEC_ConcretePress"]</xpath>
+				<value>
+					<hasInteractionCell>True</hasInteractionCell>
+					<interactionCellOffset>(0,0,2)</interactionCellOffset>
+					<placeWorkers>
+						<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+					</placeWorkers>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="syrchalis.processor.framework">
+				<xpath>/Defs/ThingDef[defName="VFEC_ConcretePress"]/tickerType</xpath>
+				<value>
+					<tickerType>Rare</tickerType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="syrchalis.processor.framework">
+				<xpath>/Defs/ThingDef[defName="VFEC_ConcretePress"]/thingClass</xpath>
+				<value>
+					<thingClass>Building_WorkTable</thingClass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd" MayRequire="syrchalis.processor.framework">
+				<xpath>/Defs/ThingDef[defName="VFEC_ConcretePress"]</xpath>
+				<value>
+					<drawerType>MapMeshAndRealTime</drawerType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="syrchalis.processor.framework">
+				<xpath>/Defs/ThingDef[defName="VFEC_ConcretePress"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+				<value>
+					<li Class="ProcessorFramework.CompProperties_Processor">
+						<capacity>200</capacity>
+						<processes>
+							<li>Ferny_Make_ConcreteProcessSlow</li>
+							<li MayRequire="dankpyon.medieval.overhaul">Ferny_Make_ClayChunkProcess</li>
+						</processes>
+					</li>
+					<li Class="CompProperties_Forbiddable" />
+				</value>
+			</li>
+
+			<!-- windmill -->
+			<li Class="PatchOperationAdd" MayRequire="syrchalis.processor.framework,dankpyon.medieval.overhaul">
+				<xpath>/Defs/ThingDef[defName="DankPyon_WindMill"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+				<value>
+					<li>Ferny_Make_ConcreteProcessFast</li>
+				</value>
+			</li>
+
+			<!-- watermill -->
+			<li Class="PatchOperationAdd" MayRequire="syrchalis.processor.framework,dankpyon.medieval.overhaul">
+				<xpath>/Defs/ThingDef[defName="DankPyon_WaterMill"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+				<value>
+					<li>Ferny_Make_ConcreteProcessFast</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- more bronze interactions -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- bronze item update -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="VFEC_Bronze"]/description</xpath>
+				<value>
+					<description>A metallic alloy made from trace elements found in stone. Can be used for crafting armor or furnishings when steel is in low supply.</description>
+				</value>
+			</li>
+
+			<!-- recipe update -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]/description</xpath>
+				<value>
+					<description>Make bronze from stone chunks.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>ElectricSmelter</li>
+						<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Furnace</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]/ingredients</xpath>
+				<value>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>StoneChunks</li>
+								</categories>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]/fixedIngredientFilter</xpath>
+				<value>
+					<fixedIngredientFilter>
+						<categories>
+							<li>StoneChunks</li>
+						</categories>
+					</fixedIngredientFilter>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]/products</xpath>
+				<value>
+					<products>
+						<VFEC_Bronze>10</VFEC_Bronze>
+					</products>
+				</value>
+			</li>
+
+			<!-- kiln -->
+			<li Class="PatchOperationReplace" MayRequire="syrchalis.processor.framework,dankpyon.medieval.overhaul">
+				<xpath>/Defs/ThingDef[defName="DankPyon_Kiln"]/description</xpath>
+				<value>
+					<description>A stone kiln used to cook raw clay into bricks or chunks into bronze.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd" MayRequire="syrchalis.processor.framework,dankpyon.medieval.overhaul">
+				<xpath>/Defs/ThingDef[defName="DankPyon_Kiln"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+				<value>
+					<li>Ferny_Make_BronzeFromChunkProcessKiln</li>
+				</value>
+			</li>
+
+			<!-- smelter -->
+			<li Class="PatchOperationAdd" MayRequire="syrchalis.processor.framework,dankpyon.medieval.overhaul">
+				<xpath>/Defs/ThingDef[defName="DankPyon_Smelter"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+				<value>
+					<li>Ferny_Make_BronzeFromChunkProcessSmelter</li>
+				</value>
+			</li>
+
+			<!-- blast furnace -->
+			<li Class="PatchOperationAdd" MayRequire="syrchalis.processor.framework,dankpyon.medieval.overhaul">
+				<xpath>/Defs/ThingDef[defName="DankPyon_BlastFurnace"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+				<value>
+					<li>Ferny_Make_BronzeFromChunkProcessIndustrial</li>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+</Patch>
