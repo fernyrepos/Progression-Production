@@ -177,10 +177,15 @@
                   <li Class="PatchOperationRemove">
                       <xpath>Defs/ThingDef[defName="VFEC_CraftingBench"]/researchPrerequisites</xpath>
                   </li>
-                  <li Class="PatchOperationReplace">
-                      <xpath>Defs/ThingDef[defName="VFEC_CraftingBench"]/designationCategory</xpath>
+                  <li Class="PatchOperationAdd">
+                      <xpath>Defs</xpath>
                       <value>
-                      <designationCategory></designationCategory>
+                        <VEF.Buildings.HiddenDesignatorsDef>
+                          <defName>FernyMO_VFEClassicalProgProduction_HiddenDesignators</defName>
+                          <hiddenDesignators>
+                            <li>VFEC_CraftingBench</li>
+                          </hiddenDesignators>
+                        </VEF.Buildings.HiddenDesignatorsDef>
                       </value>
                   </li>
                   <li Class="PatchOperationReplace">
@@ -214,9 +219,9 @@
                   <li Class="PatchOperationReplace">
                       <xpath>Defs/ResearchProjectDef[defName="Ferny_ResearchBench"]/prerequisites</xpath>
                       <value>
-						<prerequisites>
-							<li>VFEC_CraftingBench</li>
-						</prerequisites>
+                        <prerequisites>
+                          <li>VFEC_CraftingBench</li>
+                        </prerequisites>
                       </value>
                   </li>
                   <li Class="PatchOperationRemove">
@@ -238,18 +243,18 @@
             </mods>
             <match Class="PatchOperationSequence">
               <operations>
-                  <li Class="PatchOperationAdd">
-                      <xpath>Defs/ThingDef[defName="VFEM2_SmithingAnvil"]</xpath>
-                      <value>
-                      <designationCategory></designationCategory>
-                      </value>
-                  </li>
-					<!-- Make alchemy a prereq for draught research -->
-                    <li Class="PatchOperationReplace">
-                      <xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench_Electric"]/designationCategory</xpath>
-                      <value>
-                        <designationCategory></designationCategory>
-                      </value>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value>
+                          <VEF.Buildings.HiddenDesignatorsDef>
+                            <defName>FernyMO_VFEM2ProgProduction_HiddenDesignators</defName>
+                            <hiddenDesignators>
+                              <li>VFEM2_SmithingAnvil</li>
+                              <li>VFEM2_AlchemicalWorkbench</li>
+                              <li>VFEM2_AlchemicalWorkbench_Electric</li>
+                            </hiddenDesignators>
+                          </VEF.Buildings.HiddenDesignatorsDef>
+                        </value>
                     </li>
 
                     <!-- add draught lab recipes to MO Alchemy Table -->
@@ -306,22 +311,6 @@
                             </fixedBillGiverDefs>
                         </value>
                     </li>
-
-                    <!-- hide draught tables -->
-                    <li Class="PatchOperationReplace">
-                      <xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench"]/designationCategory</xpath>
-                      <value>
-                        <designationCategory></designationCategory>
-                      </value>
-                    </li>
-
-                    <li Class="PatchOperationReplace">
-                      <xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench_Electric"]/designationCategory</xpath>
-                      <value>
-                        <designationCategory></designationCategory>
-                      </value>
-                    </li>
-
 
               </operations>
             </match>
