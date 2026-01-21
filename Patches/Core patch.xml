@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+<!-- RENAME -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TableSculpting"]/label</xpath>
+        <value>
+            <label>sculpting bench</label>
+        </value>
+    </Operation>        
+
+
 <!-- ADJUSTMENTS -->
 
 	<Operation Class="PatchOperationReplace">
@@ -17,7 +26,7 @@
 		</value>
 	</Operation>
 
-<!-- Research bench -->
+<!-- NEW RESEARCH -->
     <Operation Class="PatchOperationConditional">
     <success>Always</success>
         <xpath>/Defs/ThingDef[defName="SimpleResearchBench"]/researchPrerequisites</xpath>
@@ -46,6 +55,36 @@
             </operations>
         </nomatch>
     </Operation>
+
+    <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="TableSculpting"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="TableSculpting"]/researchPrerequisites</xpath>
+                    <value>
+						<researchPrerequisites>
+							<li>Ferny_SculptingBench</li>
+						</researchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="TableSculpting"]</xpath>
+                    <value>
+						<researchPrerequisites>
+							<li>Ferny_SculptingBench</li>
+						</researchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+        </nomatch>
+    </Operation>
+
 
 
 

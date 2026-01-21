@@ -13,4 +13,18 @@
 			<li>ClassicStart</li>
 		</tags>
 	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>Ferny_SculptingBench</defName>
+		<label>Sculpting bench</label>
+		<description>Construct a bench capable of sculpting art.</description>
+		<baseCost>400</baseCost>
+		<tab>Main</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+	</ResearchProjectDef>
+
 </Defs>

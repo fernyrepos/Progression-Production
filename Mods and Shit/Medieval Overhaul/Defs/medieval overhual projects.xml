@@ -80,7 +80,7 @@
 
 	<ResearchProjectDef>
 		<defName>Ferny_LootCleaning</defName>
-		<label>Loot cleaning</label>
+		<label>Cleaning bench</label>
 		<description>Clean loot gathered from adventures.</description>
 		<baseCost>250</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
