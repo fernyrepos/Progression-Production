@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+
+
+                <!-- complex workshops -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ResearchProjectDef[defName="VFEM2_ComplexWorkshops"]/label</xpath>
+                    <value>
+                        <label>medieval linkables</label>
+                    </value>
+                </Operation>
+
+
+</Patch>

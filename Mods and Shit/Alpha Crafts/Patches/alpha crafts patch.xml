@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+
+
+                <!-- oil extraction -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ResearchProjectDef[defName="AC_OilExtraction"]/label</xpath>
+                    <value>
+                        <label>oil press workshop</label>
+                    </value>
+                </Operation>
+
+                <!-- bottling techniques -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ResearchProjectDef[defName="AC_BottlingTechniques"]/label</xpath>
+                    <value>
+                        <label>bottling station</label>
+                    </value>
+                </Operation>
+
+
+
+</Patch>

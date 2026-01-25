@@ -52,8 +52,8 @@
 
 	<ResearchProjectDef>
 		<defName>Ferny_Mending</defName>
-		<label>Mending</label>
-		<description>Mend stuff</description>
+		<label>Mending bench</label>
+		<description>Mend damaged apparel and weaponry.</description>
 		<baseCost>250</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Neolithic</techLevel>
