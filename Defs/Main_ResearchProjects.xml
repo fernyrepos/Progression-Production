@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+<!-- Research bench -->
 	<ResearchProjectDef>
 		<defName>Ferny_ResearchBench</defName>
 		<label>Research bench</label>
@@ -13,6 +15,8 @@
 			<li>ClassicStart</li>
 		</tags>
 	</ResearchProjectDef>
+
+<!-- Sculpting bench -->
 	<ResearchProjectDef>
 		<defName>Ferny_SculptingBench</defName>
 		<label>Sculpting bench</label>
