@@ -414,6 +414,14 @@
             </match>
           </Operation>
 
+    <!-- Add recipes to Anvil that don't yet have it -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>//*/recipeMaker/recipeUsers[li[.='FueledSmithy'] and not(li[.='DankPyon_Anvil'])]</xpath>
+    <value>
+      <li>DankPyon_Anvil</li>
+    </value>
+    </Operation>
+
 
 </Patch>
 
