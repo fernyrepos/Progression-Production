@@ -118,11 +118,6 @@
 
 <!-- ADJUSTMENTS -->
 
-	<!-- Stonecutting -->
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]/prerequisites</xpath>
-	</Operation>
-
 	<!--Trestle, wicker beds-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ResearchProjectDef[defName="DankPyon_Lumber"]/techLevel</xpath>
