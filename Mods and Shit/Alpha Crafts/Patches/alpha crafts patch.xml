@@ -21,5 +21,14 @@
                 </Operation>
 
 
+                <!-- miscellaneous artisanal crafting -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ResearchProjectDef[defName="AC_MiscellaneousArtisanalCrafting"]/label</xpath>
+                    <value>
+                        <label>Artisan workshop</label>
+                    </value>
+                </Operation>
+
 
 </Patch>

@@ -29,6 +29,9 @@
 		<tags>
 			<li>ClassicStart</li>
 		</tags>
+		<prerequisites>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Lumber</li>
+		</prerequisites>
 	</ResearchProjectDef>
 
 </Defs>

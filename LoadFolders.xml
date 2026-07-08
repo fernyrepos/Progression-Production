@@ -6,5 +6,6 @@
     <li IfModActive="vanillaexpanded.vfeproduction">Mods and Shit/VFE Production</li>
     <li IfModActive="sarg.alphacrafts">Mods and Shit/Alpha Crafts</li>
     <li IfModActive="oskarpotocki.vfe.medieval2">Mods and Shit/VFE Medieval 2</li>
+    <li IfModActive="cixwow.helixiengasproduction">Mods and Shit/Helixien Gas Production</li>
   </v1.5>
 </loadFolders>
