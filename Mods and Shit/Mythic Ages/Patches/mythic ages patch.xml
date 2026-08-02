@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Move Mythic Ages crafting spot bills onto Core's crafting spot. -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/RecipeDef/recipeUsers/li[text()="MA_MythicCraftingSpot"]</xpath>
+    <value>
+      <li>CraftingSpot</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef/recipeMaker/recipeUsers/li[text()="MA_MythicCraftingSpot"]</xpath>
+    <value>
+      <li>CraftingSpot</li>
+    </value>
+  </Operation>
+
+  <!-- Move Mythic Ages flat crafting bench bills onto Core's crafting spot. -->
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/RecipeDef/recipeUsers[li[text()="MA_FlatCraftingBench"] and not(li[text()="CraftingSpot"])]</xpath>
+    <value>
+      <li>CraftingSpot</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/RecipeDef/recipeUsers/li[text()="MA_FlatCraftingBench"]</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li[text()="MA_FlatCraftingBench"] and not(li[text()="CraftingSpot"])]</xpath>
+    <value>
+      <li>CraftingSpot</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef/recipeMaker/recipeUsers/li[text()="MA_FlatCraftingBench"]</xpath>
+  </Operation>
+
+  <!-- Hide the now-redundant Mythic Ages production spot designators. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs</xpath>
+    <value>
+      <VEF.Buildings.HiddenDesignatorsDef>
+        <defName>FernyMythicAgesProgProduction_HiddenDesignators</defName>
+        <hiddenDesignators>
+          <li>MA_MythicCraftingSpot</li>
+          <li>MA_FlatCraftingBench</li>
+        </hiddenDesignators>
+      </VEF.Buildings.HiddenDesignatorsDef>
+    </value>
+  </Operation>
+
+</Patch>

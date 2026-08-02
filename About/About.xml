@@ -16,6 +16,7 @@
 		<li>Ludeon.Rimworld.Anomaly</li>
 		<li>dankpyon.medieval.overhaul</li>
 		<li>ferny.progressionaesthetics</li>
+		<li>ferny.progressionfurniture</li>
 		<li>ferny.progressioncore</li>
 		<li>kentington.saveourship2</li>
 		<li>vanillaexpanded.vfeproduction</li>
@@ -26,5 +27,6 @@
 		<li>oskarpotocki.vfe.classical</li>
 		<li>sarg.alphacrafts</li>
 		<li>oskarpotocki.vfe.medieval2</li>
+		<li>veterano.mythicages.megafaunabestiary</li>
 	</loadAfter>
 </ModMetaData>
