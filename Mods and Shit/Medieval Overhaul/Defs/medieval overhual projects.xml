@@ -32,7 +32,7 @@
 			<li>ClassicStart</li>
 		</tags>
 		<prerequisites>
-			<li>DankPyon_Lumber</li>
+			<li MayRequire="ferny.progressionfurniture">Ferny_Tables</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
@@ -66,7 +66,7 @@
 			<li>ClassicStart</li>
 		</tags>
 		<prerequisites>
-			<li>DankPyon_Lumber</li>
+			<li MayRequire="ferny.progressionfurniture">Ferny_Tables</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
@@ -94,7 +94,7 @@
 		<researchViewX>20.00</researchViewX>
 		<researchViewY>3.00</researchViewY>
 		<prerequisites>
-			<li>DankPyon_Lumber</li>
+			<li MayRequire="ferny.progressionfurniture">Ferny_Tables</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
