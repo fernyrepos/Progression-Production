@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>Ferny_GasCrematorium</defName>
+		<label>Gas crematorium</label>
+		<description>Build a crematorium powered by Helixien gas.</description>
+		<baseCost>700</baseCost>
+		<tab>Main</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+		<prerequisites>
+			<li>VHGE_GasExtraction</li>
+			<li MayRequire="oskarpotocki.vfe.classical">VFEC_WoodfiredCrematorium</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_GasPoweredSmelter</defName>
+		<label>Gas-powered smelter</label>
+		<description>Build a smelter powered by Helixien gas.</description>
+		<baseCost>700</baseCost>
+		<tab>Main</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+		<prerequisites>
+			<li>VHGE_GasExtraction</li>
+			<li MayRequire="vanillaexpanded.vfeproduction">Ferny_FueledSmelter</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_GasPoweredRefinery</defName>
+		<label>Gas-powered refinery</label>
+		<description>Build a refinery powered by Helixien gas.</description>
+		<baseCost>700</baseCost>
+		<tab>Main</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>6.00</researchViewY>
+		<prerequisites>
+			<li>VHGE_GasExtraction</li>
+			<li>BiofuelRefining</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

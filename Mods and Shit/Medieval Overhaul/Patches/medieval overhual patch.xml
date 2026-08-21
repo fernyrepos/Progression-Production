@@ -96,6 +96,16 @@
 	</Operation>
 
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DankPyon_TanningDrum"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Ferny_TanningDrum</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName="DankPyon_SawTable"]/researchPrerequisites</xpath>
 			<match Class="PatchOperationReplace">
@@ -313,7 +323,7 @@
                   <li Class="PatchOperationReplace">
                       <xpath>Defs/ResearchProjectDef[defName="VFEC_CraftingBench"]/description</xpath>
                       <value>
-                        <description>Learn written language and the process of printing it.</description>
+                        <description>Learn written language and the process of printing it.\n\nNOTE: This project has a significantly increased requirement due to its proprietary nature. An easier method of learning this knowledge would be directly from Neolithic republics on the world map.</description>
                       </value>
                   </li>
                   <li Class="PatchOperationReplace">
@@ -514,6 +524,34 @@
             </match>
           </Operation>
 
+<!-- ELECTRIC CLOTH SPINNER -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DankPyon_ClothSpinner"]/label</xpath>
+		<value>
+			<label>electric cloth spinner</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DankPyon_ClothSpinner"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Ferny_ElectricClothSpinner</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+<!-- CHARCOAL PILE -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DankPyon_CharcoalPile"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Ferny_CharcoalPile</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
 
 </Patch>
 

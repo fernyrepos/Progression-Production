@@ -150,4 +150,58 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
+
+	<ResearchProjectDef>
+		<defName>Ferny_TanningDrum</defName>
+		<label>Tanning drum</label>
+		<description>Build an electrically powered drum for faster leather tanning.</description>
+		<baseCost>650</baseCost>
+		<tab>Main</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>22.50</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+			<li>DankPyon_LeatherTanning</li>
+			<li>Electricity</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+<ResearchProjectDef>
+		<defName>Ferny_ElectricClothSpinner</defName>
+		<label>Electric cloth spinner</label>
+		<description>Build an electrically powered spinner for faster textile spinning.</description>
+		<baseCost>650</baseCost>
+		<tab>Main</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>23.50</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+			<li>Electricity</li>
+			<li>DankPyon_TextileSpinning</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+<ResearchProjectDef>
+		<defName>Ferny_CharcoalPile</defName>
+		<label>Charcoal pile</label>
+		<description>Build charcoal piles for slowly burning wood into charcoal.</description>
+		<baseCost>100</baseCost>
+		<tab>DankPyon_MedievalResearchTab</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>17.50</researchViewX>
+		<researchViewY>4.00</researchViewY>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+			<li MayRequire="oskarpotocki.vfe.tribals">VFET_Construction</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
 </Defs>

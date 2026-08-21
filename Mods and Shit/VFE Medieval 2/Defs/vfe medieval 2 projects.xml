@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>Ferny_Patchleather</defName>
+		<label>Patchleather</label>
+		<description>Boil leather scraps into patchleather.</description>
+		<baseCost>300</baseCost>
+		<tab>VanillaExpanded</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>1.35</researchViewY>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+			<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_LeatherTanning</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

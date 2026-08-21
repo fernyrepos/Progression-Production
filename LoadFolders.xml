@@ -6,7 +6,10 @@
     <li IfModActive="vanillaexpanded.vfeproduction">Mods and Shit/VFE Production</li>
     <li IfModActive="sarg.alphacrafts">Mods and Shit/Alpha Crafts</li>
     <li IfModActive="oskarpotocki.vfe.medieval2">Mods and Shit/VFE Medieval 2</li>
+    <li IfModActive="talias.VFEHardleatherConcrete">Mods and Shit/Industrial Hardleather Concrete and Cheese</li>
     <li IfModActive="veterano.mythicages.megafaunabestiary">Mods and Shit/Mythic Ages</li>
+    <li IfModActiveAll="scpchemfuel.appliances,vanillaexpanded.vchemfuele">Mods and Shit/Appliances Expanded</li>
+    <li IfModActive="vanillaexpanded.helixiengas">Mods and Shit/VE Helixien Gas</li>
     <!-- <li IfModActive="cixwow.helixiengasproduction">Mods and Shit/Helixien Gas Production</li> -->
   </v1.5>
 </loadFolders>

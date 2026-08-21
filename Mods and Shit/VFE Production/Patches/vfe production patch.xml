@@ -17,6 +17,26 @@
 		</value>
 	</Operation>
 
+<!-- NEW RESEARCH PROJECTS -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VFE_FueledSmelter"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Ferny_FueledSmelter</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VFE_TableStonecutterElectric"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Ferny_ElectricStonecuttersTable</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
 </Patch>
 
 

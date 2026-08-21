@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>Ferny_FueledSmelter</defName>
+		<label>Fueled smelter</label>
+		<description>Build a fueled smelter for melting slag chunks and unwanted equipment into useful metal.</description>
+		<baseCost>500</baseCost>
+		<tab>Main</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_ElectricStonecuttersTable</defName>
+		<label>Electric stonecutter's table</label>
+		<description>Build an electric stonecutter's table for faster stone block cutting.</description>
+		<baseCost>600</baseCost>
+		<tab>Main</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<prerequisites>
+			<li>Stonecutting</li>
+			<li>Electricity</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

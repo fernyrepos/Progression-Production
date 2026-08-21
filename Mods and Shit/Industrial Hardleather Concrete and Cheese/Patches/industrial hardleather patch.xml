@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ResearchProjectDef>
+							<defName>Ferny_ElectricLeatherBoilpot</defName>
+							<label>Electric leather boilpot</label>
+							<description>Build an electrically powered boilpot for producing patchleather.</description>
+							<baseCost>600</baseCost>
+							<tab>VanillaExpanded</tab>
+							<techLevel>Industrial</techLevel>
+							<researchViewX>3.00</researchViewX>
+							<researchViewY>1.85</researchViewY>
+							<tags>
+								<li>ClassicStart</li>
+							</tags>
+							<prerequisites>
+								<li>Ferny_Patchleather</li>
+								<li>Electricity</li>
+							</prerequisites>
+						</ResearchProjectDef>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="talias_EletricLeatherBoilpot"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Ferny_ElectricLeatherBoilpot</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ResearchProjectDef>
+							<defName>Ferny_ElectricCementMaker</defName>
+							<label>Electric concrete maker</label>
+							<description>Build an electrically powered concrete press.</description>
+							<baseCost>600</baseCost>
+							<tab>VanillaExpanded</tab>
+							<techLevel>Industrial</techLevel>
+							<researchViewX>3.00</researchViewX>
+							<researchViewY>2.15</researchViewY>
+							<tags>
+								<li>ClassicStart</li>
+							</tags>
+							<prerequisites>
+								<li>VFEC_CementMaking</li>
+								<li>Electricity</li>
+							</prerequisites>
+						</ResearchProjectDef>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="talias_EletricConcreteMaker"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Ferny_ElectricCementMaker</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

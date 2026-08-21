@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VHGE_GasPoweredCrematorium"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Ferny_GasCrematorium</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VHGE_GasPoweredSmelter"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Ferny_GasPoweredSmelter</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VHGE_GasPoweredRefinery"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Ferny_GasPoweredRefinery</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+</Patch>

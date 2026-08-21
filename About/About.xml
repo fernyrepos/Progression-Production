@@ -18,6 +18,7 @@
 		<li>ferny.progressionaesthetics</li>
 		<li>ferny.progressionfurniture</li>
 		<li>ferny.progressioncore</li>
+		<li>ferny.generallymoreresearch</li>
 		<li>kentington.saveourship2</li>
 		<li>vanillaexpanded.vfeproduction</li>
 		<li>scpchemfuel.appliances</li>
@@ -25,8 +26,10 @@
 		<li>vanillaexpanded.vchemfuele</li>
 		<li>cixwow.helixiengasproduction</li>
 		<li>oskarpotocki.vfe.classical</li>
+		<li>oskarpotocki.vfe.tribals</li>
 		<li>sarg.alphacrafts</li>
 		<li>oskarpotocki.vfe.medieval2</li>
+		<li>talias.VFEHardleatherConcrete</li>
 		<li>veterano.mythicages.megafaunabestiary</li>
 	</loadAfter>
 </ModMetaData>

@@ -18,7 +18,25 @@
 	</Operation>
 
 
+<!-- CHEMFUEL PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CA_ChemfuelCrematorium"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Ferny_ChemfuelCrematorium</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Ferny_ChemfuelSmelter</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+
 </Patch>
-
-
-

@@ -34,4 +34,20 @@
 		</prerequisites>
 	</ResearchProjectDef>
 
+<!-- Electric smelter -->
+	<ResearchProjectDef>
+		<defName>Ferny_ElectricSmelter</defName>
+		<label>Electric smelter</label>
+		<description>Build an electric smelter for melting slag chunks and unwanted equipment into useful metal.</description>
+		<baseCost>700</baseCost>
+		<tab>Main</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<prerequisites>
+			<li>Electricity</li>
+			<li MayRequire="vanillaexpanded.vfeproduction">Ferny_FueledSmelter</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
 </Defs>

@@ -12,4 +12,15 @@
                 </Operation>
 
 
+                <!-- patchleather -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEM2_LeatherBoilpot"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Ferny_Patchleather</li>
+                        </researchPrerequisites>
+                    </value>
+                </Operation>
+
 </Patch>
