@@ -95,8 +95,22 @@
         </nomatch>
     </Operation>
 
+<!-- ELECTRIC SMELTER / BIOFUEL REFINERY -->
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="BiofuelRefining"]/label</xpath>
+		<value>
+			<label>Biofuel refinery</label>
+		</value>
+	</Operation>
 
-
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ElectricSmelter"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Ferny_ElectricSmelter</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
 
 </Patch>

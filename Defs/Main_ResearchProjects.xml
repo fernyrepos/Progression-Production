@@ -9,7 +9,7 @@
 		<baseCost>650</baseCost>
 		<tab>Main</tab>
 		<techLevel>Neolithic</techLevel>
-		<researchViewX>3.00</researchViewX>
+		<researchViewX>2.00</researchViewX>
 		<researchViewY>3.00</researchViewY>
 		<tags>
 			<li>ClassicStart</li>
@@ -24,13 +24,29 @@
 		<baseCost>400</baseCost>
 		<tab>Main</tab>
 		<techLevel>Neolithic</techLevel>
-		<researchViewX>3.00</researchViewX>
-		<researchViewY>3.00</researchViewY>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>3.50</researchViewY>
 		<tags>
 			<li>ClassicStart</li>
 		</tags>
 		<prerequisites>
 			<li MayRequire="ferny.progressionfurniture">Ferny_Tables</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+<!-- Electric smelter -->
+	<ResearchProjectDef>
+		<defName>Ferny_ElectricSmelter</defName>
+		<label>Electric smelter</label>
+		<description>Build an electric smelter for melting slag chunks and unwanted equipment into useful metal.</description>
+		<baseCost>700</baseCost>
+		<tab>Main</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<prerequisites>
+			<li>Electricity</li>
+			<li MayRequire="vanillaexpanded.vfeproduction">Ferny_FueledSmelter</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
